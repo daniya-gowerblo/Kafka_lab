@@ -99,6 +99,7 @@ py -m streamlit run frontend/app.py
 
 ## Структура проекта
 
+```
 kafka_lab/
 ├── backend/
 │   ├── config.py              # Конфигурация Kafka и ML
@@ -116,6 +117,7 @@ kafka_lab/
 ├── docker-compose.yml         # Docker конфигурация
 ├── requirements.txt           # Python зависимости
 └── README.md                  # Этот файл
+```
 
 
 
