@@ -46,15 +46,21 @@ docker compose ps
 # Ожидаемый результат: 
 kafka-1 в статусе Up (healthy)
 
-### 4. Обучение ML-модели 
+### 4. Обучение ML-модели
 
-python backend/ml/train_model.py
+py backend/ml/train_model.py
 
 # Создаст файлы:
 # backend/ml/trained_model.pkl - обученная модель Random Forest
 # backend/ml/scaler.pkl - scaler для нормализация данных
 
-### 5. Генерация данных и отправка в Kafka
+### 5. Подготовка датасета
+
+# Файл data/raw_data.csv не включен в репозиторий из-за размера. Если он отсутствует, сгенерируйте данные:
+
+py data/generate_dataset.py
+
+### 6. Генерация данных и отправка в Kafka
 
 cd kafka_lab
 py backend/producer.py
@@ -70,7 +76,7 @@ py backend/consumer.py
 
 ### 7. Запуск Dashboard
 
-python -m streamlit run frontend/app.py
+py -m streamlit run frontend/app.py
 
 # Откройте: http://localhost:8501
 
@@ -90,8 +96,9 @@ kafka_lab/
 ├── frontend/
 │   └── app.py                 # Streamlit Dashboard
 ├── data/
-│   ├── raw_data.csv           # Готовый датасет 
+│   ├── raw_data.csv           # Готовый датасет (не включен в репозиторий)
 │   └── generate_dataset.py    # Генератор
 ├── docker-compose.yml         # Docker конфигурация
 ├── requirements.txt           # Python зависимости
 └── README.md                  # Этот файл
+
