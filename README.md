@@ -99,8 +99,7 @@ py -m streamlit run frontend/app.py
 
 ## Структура проекта
 
-```
-kafka_lab/
+```kafka_lab/
 ├── backend/
 │   ├── config.py              # Конфигурация Kafka и ML
 │   ├── producer.py            # Producer для отправки данных
@@ -116,8 +115,9 @@ kafka_lab/
 │   └── generate_dataset.py    # Генератор
 ├── docker-compose.yml         # Docker конфигурация
 ├── requirements.txt           # Python зависимости
-└── README.md                  # Этот файл
-```
+└── README.md                  # Этот файл```
+
+
 
 
 
