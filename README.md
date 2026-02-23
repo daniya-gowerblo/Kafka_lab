@@ -115,7 +115,9 @@ py -m streamlit run frontend/app.py
 │   └── generate_dataset.py    # Генератор
 ├── docker-compose.yml         # Docker конфигурация
 ├── requirements.txt           # Python зависимости
-└── README.md                  # Этот файл```
+└── README.md                  # Этот файл
+```
+
 
 
 
