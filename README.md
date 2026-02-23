@@ -27,7 +27,7 @@ Producer (Python) -> Apache Kafka (KRaft, 1 broker) -> Consumer (Python + ML mod
 
 ```bash
 git clone <repository-url>
-cd kafka_lab
+cd kafka_lab```
 
 ### 2. Установка зависимостей Python
 
@@ -101,4 +101,5 @@ kafka_lab/
 ├── docker-compose.yml         # Docker конфигурация
 ├── requirements.txt           # Python зависимости
 └── README.md                  # Этот файл
+
 
