@@ -57,9 +57,9 @@ kafka-1 в статусе Up (healthy)
 py backend/ml/train_model.py
 ```
 
-# Создаст файлы:
-# backend/ml/trained_model.pkl - обученная модель Random Forest
-# backend/ml/scaler.pkl - scaler для нормализация данных
+#### Создаст файлы:
+#### backend/ml/trained_model.pkl - обученная модель Random Forest
+#### backend/ml/scaler.pkl - scaler для нормализация данных
 
 ### 5. Подготовка датасета
 
@@ -116,6 +116,7 @@ kafka_lab/
 ├── docker-compose.yml         # Docker конфигурация
 ├── requirements.txt           # Python зависимости
 └── README.md                  # Этот файл
+
 
 
 
