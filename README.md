@@ -48,7 +48,7 @@ docker compose up -d
 docker compose ps
 ```
 
-# Ожидаемый результат: 
+#### Ожидаемый результат: 
 kafka-1 в статусе Up (healthy)
 
 ### 4. Обучение ML-модели
@@ -58,12 +58,12 @@ py backend/ml/train_model.py
 ```
 
 #### Создаст файлы:
-#### backend/ml/trained_model.pkl - обученная модель Random Forest
-#### backend/ml/scaler.pkl - scaler для нормализация данных
+- backend/ml/trained_model.pkl - обученная модель Random Forest
+- backend/ml/scaler.pkl - scaler для нормализация данных
 
 ### 5. Подготовка датасета
 
-# Файл data/raw_data.csv не включен в репозиторий из-за размера. Если он отсутствует, сгенерируйте данные:
+ Файл data/raw_data.csv не включен в репозиторий из-за размера. Если он отсутствует, сгенерируйте данные:
 
 ```
 py data/generate_dataset.py
@@ -76,16 +76,16 @@ cd kafka_lab
 py backend/producer.py
 ```
 
-# Ожидаемый результат: Sent .. messages
+ Ожидаемый результат: Sent .. messages
 
 ```
 py backend/consumer.py
 ```
 
-# Ожидаемый результат: 
-# ML model loaded succesfully
-# ANOMALY DETECTED! 
-# Processed: .., Anomalies: 44
+#### Ожидаемый результат: 
+ ML model loaded succesfully
+ ANOMALY DETECTED! 
+ Processed: .., Anomalies: 44
 
 ### 7. Запуск Dashboard
 
@@ -93,9 +93,9 @@ py backend/consumer.py
 py -m streamlit run frontend/app.py
 ```
 
-# Откройте: http://localhost:8501
+#### Откройте: http://localhost:8501
 
-# Ожидаемый результат: интерактивные графики с данными
+#### Ожидаемый результат: интерактивные графики с данными
 
 ## Структура проекта
 
@@ -116,6 +116,7 @@ kafka_lab/
 ├── docker-compose.yml         # Docker конфигурация
 ├── requirements.txt           # Python зависимости
 └── README.md                  # Этот файл
+
 
 
 
