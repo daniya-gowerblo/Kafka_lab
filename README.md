@@ -31,7 +31,7 @@ cd kafka_lab```
 
 ### 2. Установка зависимостей Python
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ### 3. Запуск Kafka (Docker)
 
@@ -101,5 +101,6 @@ kafka_lab/
 ├── docker-compose.yml         # Docker конфигурация
 ├── requirements.txt           # Python зависимости
 └── README.md                  # Этот файл
+
 
 
